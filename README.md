@@ -17,6 +17,4 @@ equally likely, i.e. the input array is ordered randomly.
 Your answer must derive probabilities for choosing a good pivot and
 quantitatively reason with them.
 
-Add your answer to this markdown file. [This
-page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
-might help with the notation for mathematical expressions.
+In assuming a randomly ordered input array with n elements, picking the first element yields a 1/n chance of being the true median value. This is inferior to the odds utilizing the median-of-three method as we now have ((1)/(n-2)) (assuming n >= 3) odds of picking the true median value with this method. (the two values that happen to not be the median we need not worry about anymore) On top of these slightly better odds, we have the added benefit of avoiding the worst case; that being one in which we choose the smallest or largest value as the pivot.
